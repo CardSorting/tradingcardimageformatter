@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Card Formatter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        /* Global styles */
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main content styles */
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Upload button styles */
+        .upload-button-wrapper {
+            margin-top: 20px;
+        }
+
+        .elegant-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Download button styles */
+        #download-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Canvas section styles */
+        .canvas-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #canvas-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #888;
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Business Card Formatter</h1>
+        </header>
+        <main class="main-content">
+            <div class="upload-button-wrapper">
+                <button class="elegant-button">Upload Image</button>
+                <input type="file" name="image" id="image-input" accept="image/*">
+            </div>
+            <div class="canvas-section">
+                <div id="canvas-container">
+                    <!-- Canvas will be appended here by JavaScript -->
+                </div>
+                <button id="download-button" class="elegant-button">Download</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <!-- footer content here -->
+        </footer>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
